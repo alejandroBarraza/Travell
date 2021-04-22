@@ -1,0 +1,143 @@
+/* global styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+button {
+  padding: 2rem 6rem;
+  color: white;
+  background: #4c6e97;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+/* -------------nav section------------------- */
+
+.main-header {
+  background: #131c27;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+}
+
+/* ------hero section-------- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./img/landing-page.jpg);
+  min-height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero h2 {
+  color: white;
+}
+.hero h3 {
+  color: white;
+  margin: 5rem;
+  text-align: center;
+}
+
+/* location section */
+#location {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./img/new-york-page.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.location-header {
+  width: 90%;
+  margin: auto;
+}
+.location-header h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+.location-header h3 {
+  padding: 4rem 0rem;
+  background: linear-gradient(#131c27, #663b34);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+/* todo: move all media queries to individul files. */
+/* media queries */
+@media screen and (max-width: 936px) {
+  html {
+    font-size: 45%;
+  }
+  #nav {
+    text-align: center;
+  }
+  #logo {
+    margin-bottom: 2rem;
+  }
+}
