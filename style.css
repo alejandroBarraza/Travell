@@ -145,7 +145,7 @@ nav {
 
 @keyframes cloudAnimation {
   from {
-    transform: translate(10%, -10%);
+    transform: translate(8%, -80%);
   }
   to {
     transform: translate(0%, 0%);
