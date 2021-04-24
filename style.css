@@ -132,6 +132,7 @@ nav {
   position: absolute;
   top: 0%;
   right: 0%;
+  pointer-events: none;
 }
 .moving-cloud1 {
   animation: cloudAnimation 3s infinite alternate ease-in-out;
@@ -145,7 +146,7 @@ nav {
 
 @keyframes cloudAnimation {
   from {
-    transform: translate(8%, -80%);
+    transform: translate(10%, -10%);
   }
   to {
     transform: translate(0%, 0%);
@@ -155,6 +156,7 @@ nav {
 /* todo: move all media queries to individul files. */
 /* media queries */
 @media screen and (max-width: 936px) {
+  /* hero section */
   html {
     font-size: 45%;
   }
@@ -163,5 +165,19 @@ nav {
   }
   #logo {
     margin-bottom: 2rem;
+  }
+  /* location section  */
+  .cloud {
+    height: 40rem;
+    width: 60rem;
+  }
+  .moving-cloud1 {
+    height: 50rem;
+    z-index: -1;
+    opacity: 0.9;
+  }
+  .moving-cloud2 {
+    z-index: -2;
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
   }
 }
