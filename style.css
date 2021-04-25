@@ -32,6 +32,7 @@ h3 {
 h4,
 h5 {
   font-size: 2.8rem;
+  font-weight: normal;
 }
 a {
   color: white;
@@ -153,6 +154,59 @@ nav {
   }
 }
 
+/* benefits section */
+
+.benefits-header {
+  background: #131c27;
+  color: white;
+  text-align: center;
+  min-height: 30vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-header h3 {
+  margin: 1rem;
+}
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: rgb(250, 248, 248);
+  margin: 2rem;
+  flex: 1 1 50rem;
+  min-height: 40vh;
+  box-shadow: 0rem 1rem 1.8rem #d8d8d8;
+}
+
+.card img {
+  height: 3rem;
+}
+.img-container {
+  display: flex;
+  min-height: 10rem;
+  background-color: #131c27;
+  align-items: center;
+  justify-content: center;
+}
+.info-cotainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+.card p {
+  padding: 3rem;
+  text-align: center;
+}
 /* todo: move all media queries to individul files. */
 /* media queries */
 @media screen and (max-width: 936px) {
@@ -160,11 +214,10 @@ nav {
   html {
     font-size: 45%;
   }
-  #nav {
-    text-align: center;
-  }
+
   #logo {
     margin-bottom: 2rem;
+    text-align: center;
   }
   /* location section  */
   .cloud {
