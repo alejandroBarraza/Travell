@@ -250,6 +250,32 @@ form input {
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
+
+/* footer section */
+footer {
+  background-color: #131c27;
+}
+.footer-container {
+  padding: 5rem;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.footer-header {
+  flex: 1 1 40rem;
+}
+.footer-container h1 {
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+  color: white;
+}
+.footer-images {
+  flex: 1 1 40rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* todo: move all media queries to individul files. */
 /* media queries */
 @media screen and (max-width: 936px) {
@@ -279,5 +305,9 @@ form input {
   /* form section */
   .contact-wrapper {
     width: 100%;
+  }
+  .footer-container h1 {
+    text-align: center;
+    padding-bottom: 2rem;
   }
 }
