@@ -207,6 +207,49 @@ nav {
   padding: 3rem;
   text-align: center;
 }
+
+/* --------- form section ------- */
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./img/contact-mountain.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact-wrapper {
+  background-color: rgba(19, 28, 39, 0.2);
+  color: white;
+  width: 60%;
+  margin: auto;
+  border-radius: 2rem;
+}
+.contact-header h1 {
+  text-align: center;
+  padding: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+.form-name,
+.form-email {
+  padding: 3rem;
+  text-align: center;
+}
+
+form label {
+  margin: 5rem;
+}
+form input {
+  width: 50rem;
+  height: 5rem;
+}
+.submit {
+  width: 100%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
 /* todo: move all media queries to individul files. */
 /* media queries */
 @media screen and (max-width: 936px) {
@@ -232,5 +275,9 @@ nav {
   .moving-cloud2 {
     z-index: -2;
     animation: cloudAnimation 3s infinite alternate ease-in-out;
+  }
+  /* form section */
+  .contact-wrapper {
+    width: 100%;
   }
 }
