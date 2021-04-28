@@ -15,20 +15,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./icons/globe.svg" />
+    <script src="index"></script>
     <title>Travelly | Travelling Agency</title>
   </head>
   <body>
     <header class="main-header">
       <nav>
+        <a href=""></a>
         <h1 id="logo">Travelly</h1>
         <ul class="nav-links">
-          <li><a href="#">Location</a></li>
-          <li><a href="#">Benefits</a></li>
-          <li><a href="#">contacts</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#contact">contacts</a></li>
         </ul>
       </nav>
     </header>
-    <section class="hero">
+    <section class="hero" id="hero-section">
       <h2>Travel Beyond Limits</h2>
       <h3>
         Start your travel ar an addordable proce with Travelly <br />
@@ -90,14 +92,14 @@
         <header class="contact-header">
           <h1>Contact information</h1>
         </header>
-        <form>
+        <form action="https://formspree.io/f/mbjqdlab" method="POST" id="form">
           <div class="form-name">
             <label for="name">Name</label>
             <input type="text" required name="name" id="name" />
           </div>
           <div class="form-email">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" required />
+            <input type="email" name="_replyto" id="email" required />
           </div>
           <button class="submit">submit</button>
         </form>
@@ -115,5 +117,6 @@
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

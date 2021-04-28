@@ -54,6 +54,9 @@ button:hover {
 
 .main-header {
   background: #131c27;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 nav {
   display: flex;
@@ -222,7 +225,7 @@ nav {
 .contact-wrapper {
   background-color: rgba(19, 28, 39, 0.2);
   color: white;
-  width: 60%;
+  width: 50%;
   margin: auto;
   border-radius: 2rem;
 }
@@ -304,7 +307,8 @@ footer {
   }
   /* form section */
   .contact-wrapper {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
   .footer-container h1 {
     text-align: center;
