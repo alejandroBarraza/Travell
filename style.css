@@ -50,6 +50,9 @@ button {
 button:hover {
   background-color: #131c27;
 }
+button:focus {
+  background: #16212e;
+}
 /* -------------nav section------------------- */
 
 .main-header {
